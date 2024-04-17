@@ -1,6 +1,6 @@
 require "language/node"
 
-class Fdk < Formula
+class FdkAT910Beta < Formula
   desc "Freshworks Developer Kit"
   license "MIT"
   homepage "https://developer.freshworks.com/"
