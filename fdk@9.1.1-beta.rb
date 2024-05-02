@@ -1,6 +1,6 @@
 require "language/node"
 
-class FdkAT910Beta < Formula
+class FdkAT911Beta < Formula
   desc "Freshworks Developer Kit"
   license "MIT"
   homepage "https://developer.freshworks.com/"
@@ -37,7 +37,7 @@ class FdkAT910Beta < Formula
     system "#{prefix}/custom_node_location/bin/npm", "config", "set", "prefix", "#{prefix}/custom_node_location"
 
     # install latest FDK
-    system "#{prefix}/custom_node_location/bin/npm", "install", "-g", "https://cdn.freshdev.io/fdk/v9.1.0-beta.tgz"
+    system "#{prefix}/custom_node_location/bin/npm", "install", "-g", "https://cdn.freshdev.io/fdk/v9.1.1-beta.tgz"
 
   end
 
