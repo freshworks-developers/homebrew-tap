@@ -8,12 +8,6 @@ class FdkAT911Beta < Formula
   sha256 "5bb8da908ed590e256a69bf2862238c8a67bc4600119f2f7721ca18a7c810c0f"
 
   
-  # Define the resource
-  resource "node" do
-    url "https://nodejs.org/dist/v18.18.2/node-v18.18.2-darwin-x64.tar.gz"
-    sha256 "5bb8da908ed590e256a69bf2862238c8a67bc4600119f2f7721ca18a7c810c0f"
-  end
-
   resource "node" do
     if OS.mac?
       url "https://nodejs.org/dist/v18.18.2/node-v18.18.2-darwin-x64.tar.gz"
