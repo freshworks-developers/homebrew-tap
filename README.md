@@ -1,6 +1,6 @@
 # Brew Formula: Node with FDK
 
-This Brew formula automates the installation process for Node.js version 18.18.2 and the Freshworks Developer Kit (FDK) in a custom folder. It also provides instructions on how to activate the FDK in a new terminal session.
+This Brew formula automates the installation process for Node.js version 24.11.0 and the Freshworks Developer Kit (FDK) in a custom folder. It also provides instructions on how to activate the FDK in a new terminal session.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ brew install fdk
 
 After tapping the repository and installing the FDK, the formula performs the following tasks:
 
-1. Downloads and installs Node.js version 18.18.2 in a custom folder.
+1. Downloads and installs Node.js version 24.11.0 in a custom folder.
 2. Installs the Freshworks Developer Kit (FDK) in the same custom folder.
 
 Once installed, you can use the FDK by sourcing the `path.bash.inc` file in a new terminal session using the following command:
