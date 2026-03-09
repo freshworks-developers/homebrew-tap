@@ -53,10 +53,19 @@ class Fdk < Formula
     system "#{prefix}/custom_node_location/bin/npm", "config", "set", "prefix", "#{prefix}/custom_node_location"
 
     # install latest FDK
-    system "#{prefix}/custom_node_location/bin/npm", "install", "-g", "https://cdn.freshdev.io/fdk/latest.tgz"
+    system "#{prefix}/custom_node_location/bin/npm", "install", "-g", "https://cdn.freshdev.io/fdk/latest-v24.tgz"
+
+    # Create symlinks for all binaries
+    bin.install_symlink prefix/"custom_node_location/bin/fdk"
+    bin.install_symlink prefix/"custom_node_location/bin/node"
+    bin.install_symlink prefix/"custom_node_location/bin/npm"
+    bin.install_symlink prefix/"custom_node_location/bin/npx"
+    bin.install_symlink prefix/"custom_node_location/bin/corepack"
   end
 
   test do
-    system true
+    system "#{bin}/fdk", "version"
+    system "#{bin}/node", "--version"
+    system "#{bin}/npm", "--version"
   end
 end
